@@ -62,11 +62,11 @@ deepseek.chat('What are the best 10 hiking tips?').then(response => {
   console.error('Failed to send message:', error);
 });
 ```
-##Contributing
+## Contributing
 Contributions are welcome! If you have suggestions for improving this wrapper, please open an issue or submit a pull request.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Disclaimer
+## Disclaimer
 This is an unofficial wrapper for the Deepseek API, not affiliated with, authorized, maintained, sponsored, or endorsed by Deepseek or any of its affiliates or subsidiaries. Use at your own risk.
