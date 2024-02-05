@@ -27,8 +27,9 @@ yarn add unofficial-deepseek-api
 First, import the DeepseekAPI class from the package and create an instance with your Deepseek credentials:
 
 ```bash
-const DeepseekAPI = require('unofficial-deepseek-api');
-const deepseek = new DeepseekAPI('<YOUR_EMAIL>', '<YOUR_PASSWORD>');
+const DeepseekAPI = require('./src/DeepseekAPI');
+// Creating an instance with a custom prompt
+const deepseek = new DeepseekAPI('your-email@example.com', 'your-password', 'deepseek_chat', 'Custom prompt here. Adjust the tone, style, and content as needed.');
 ```
 
 ## Logging In
