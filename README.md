@@ -14,13 +14,13 @@ This is an unofficial Node.js wrapper for the Deepseek API, designed to simplify
 Install the package using npm:
 
 ```bash
-npm install unofficial-deepseek-api
+npm install deepseek-api-wrapper
 ```
 
 Or using yarn:
 
 ```bash
-yarn add unofficial-deepseek-api
+yarn add deepseek-api-wrapper
 ```
 
 ## Usage
