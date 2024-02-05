@@ -3,7 +3,7 @@ const axios = require('axios');
 const iconv = require('iconv-lite');
 
 class DeepseekAPI {
-    constructor(email, password, modelClass = 'deepseek_chat') {
+    constructor(email, password, modelClass = 'deepseek_chat', customPrompt) {
         this.email = email;
         this.password = password;
         this.modelClass = modelClass;
@@ -12,7 +12,8 @@ class DeepseekAPI {
             "Accept-Language": "en-IN,en;q=0.9",
             "Content-Type": "application/json"
         };
-        this.prompt = "Your name is Ali. You will play the role of a blogger. Conform to a positive and informational tone. Try to craft content within 500 words. Maintain character at all times.";
+        // Use the provided customPrompt if available, otherwise use the default prompt
+        this.prompt = customPrompt || "Your name is Ali. You will play the role of a blogger. Conform to a positive and informational tone. Try to craft content within 500 words. Maintain character at all times.";
     }
 
     async login() {
